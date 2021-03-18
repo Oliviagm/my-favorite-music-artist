@@ -29,14 +29,12 @@ img {
   padding-left: 10px;
 }
 
-
-
 /* Desktop Styles */
 @media (min-width: 767px) {
-    .remove-margin-top{
-        margin-top: 0;
-}
-    .header {
+  .remove-margin-top {
+    margin-top: 0;
+  }
+  .header {
     display: flex;
     flex-direction: row-reverse;
   }
@@ -50,40 +48,37 @@ img {
     justify-content: center;
     align-items: center;
   }
-.h-center{
+  .h-center {
     display: flex;
     justify-content: center;
+  }
 }
-}
-  .max-width-400 {
-    max-width: 400px;
-  }
-
-  .albums {
-    display: flex;
-    
-  }
-
-  .albums > div {
-    flex: 1 0;
-    margin: 10px;
-  }
-
-
-  .albums > div:first-child{
-      margin-left: 0;
-  }
-
-  .albums > div:last-child{
-    margin-right: 0;
+.max-width-400 {
+  max-width: 400px;
 }
 
-  /* A more reusable classname */
-  .flex {
-    display: flex;
-  }
+.albums {
+  display: flex;
+}
 
-  .flex > * {
-    flex: 1 0;
-  }
+.albums > div {
+  flex: 1 0;
+  margin: 10px;
+}
+
+.albums > div:first-child {
+  margin-left: 0;
+}
+
+.albums > div:last-child {
+  margin-right: 0;
+}
+
+/* A more reusable classname */
+.flex {
+  display: flex;
+}
+
+.flex > * {
+  flex: 1 0;
 }
