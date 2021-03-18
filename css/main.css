@@ -12,6 +12,11 @@ img {
 }
 .nav-primary {
   padding: 10px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0, 16);
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: white;
 }
 
 .mx-8 {
@@ -24,9 +29,14 @@ img {
   padding-left: 10px;
 }
 
+
+
 /* Desktop Styles */
 @media (min-width: 767px) {
-  .header {
+    .remove-margin-top{
+        margin-top: 0;
+}
+    .header {
     display: flex;
     flex-direction: row-reverse;
   }
@@ -40,8 +50,40 @@ img {
     justify-content: center;
     align-items: center;
   }
-
+.h-center{
+    display: flex;
+    justify-content: center;
+}
+}
   .max-width-400 {
     max-width: 400px;
+  }
+
+  .albums {
+    display: flex;
+    
+  }
+
+  .albums > div {
+    flex: 1 0;
+    margin: 10px;
+  }
+
+
+  .albums > div:first-child{
+      margin-left: 0;
+  }
+
+  .albums > div:last-child{
+    margin-right: 0;
+}
+
+  /* A more reusable classname */
+  .flex {
+    display: flex;
+  }
+
+  .flex > * {
+    flex: 1 0;
   }
 }
